@@ -4,7 +4,8 @@ import {
   FaLaptopCode,
   FaBrain,
   FaFileExcel,
-  FaMedal
+  FaMedal,
+  FaIdBadge  // ✅ Added for participation
 } from "react-icons/fa";
 
 export default function Certifications() {
@@ -33,6 +34,11 @@ export default function Certifications() {
       title: "Naukri NCAT Certificate",
       issuer: "Naukri Campus",
       icon: <FaMedal className="text-pink-600 text-3xl" />,
+    },
+    {
+      title: "HackDiwas 2.0 Participation",
+      issuer: "United Group of Institutions",
+      icon: <FaIdBadge className="text-purple-500 text-3xl" />, // ✅ Neutral, professional
     },
   ];
 
