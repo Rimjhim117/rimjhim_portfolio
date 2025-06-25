@@ -51,7 +51,7 @@ export default function About() {
       {/* Profile Image */}
       <div className="md:w-1/3 flex justify-center">
         <img
-          src="/about_photo.jpg"
+          src="/About_photo.jpg"
           alt="Rimjhim Srivastava"
           className="w-72 h-auto rounded-xl shadow-xl border-4 border-white object-cover object-top"
         />
