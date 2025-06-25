@@ -10,6 +10,7 @@ import {
   FaGithub,
   FaCode,
 } from "react-icons/fa";
+import { FaC } from "react-icons/fa6";
 
 import {
   SiSpringboot,
@@ -25,6 +26,7 @@ export default function Skills() {
       skills: [
         { name: "Java", icon: <FaJava className="text-orange-500" /> },
         { name: "Python", icon: <FaPython className="text-blue-500" /> },
+        { name: "C", icon: <FaC className="text-blue-600" /> },
       ],
     },
     {
