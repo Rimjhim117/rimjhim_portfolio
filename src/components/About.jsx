@@ -25,7 +25,7 @@ export default function About() {
             <FaUniversity className="text-purple-600 text-xl mt-1" />
             <div>
               <p className="text-base text-gray-800 font-medium">
-                B.Tech in Information Technology
+                Graduation
               </p>
               <p className="text-sm text-gray-600">
                 United College of Engineering and Research, Prayagraj (2022–2026)
@@ -38,7 +38,7 @@ export default function About() {
             <FaSchool className="text-purple-600 text-xl mt-1" />
             <div>
               <p className="text-base text-gray-800 font-medium">
-                Completed Schooling
+                Schooling
               </p>
               <p className="text-sm text-gray-600">
                 St. Anthony's Convent Girls’ Inter College, Prayagraj
