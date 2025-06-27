@@ -23,7 +23,7 @@ const projects = [
     github: "https://github.com/Rimjhim117/rimjhim-portfolio",
   },
   {
-  title: "Bank Management System (Java Swing)",
+  title: "Bank Management System",
   description:
     "A desktop application that simulates banking operations like login, deposit, withdrawal, transfer, loan request, and admin controls.",
   tech: ["Java", "Swing", "File I/O"],
