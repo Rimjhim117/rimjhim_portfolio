@@ -5,7 +5,8 @@ import {
   FaBrain,
   FaFileExcel,
   FaMedal,
-  FaIdBadge  // ✅ Added for participation
+  FaIdBadge,
+  FaChartLine // ✅ New icon for analytics/data certification
 } from "react-icons/fa";
 
 export default function Certifications() {
@@ -38,7 +39,12 @@ export default function Certifications() {
     {
       title: "HackDiwas 2.0 Participation",
       issuer: "United Group of Institutions",
-      icon: <FaIdBadge className="text-purple-500 text-3xl" />, // ✅ Neutral, professional
+      icon: <FaIdBadge className="text-purple-500 text-3xl" />,
+    },
+    {
+      title: "Data Analytics Virtual Experience",
+      issuer: "Deloitte Australia (Forage)",
+      icon: <FaChartLine className="text-indigo-600 text-3xl" />, // 📊 Symbolizes analytics
     },
   ];
 
