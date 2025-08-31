@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Backend for portfolio website",
   "main": "server.js",
+<<<<<<< HEAD
   
+=======
+  "type": "commonjs",
+>>>>>>> 800ebd5301a42e103a59dac07282495722f8519d
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
