@@ -1,0 +1,38 @@
+[
+  {
+    "title": "CityScape: Marketplace for local Goods",
+    "description": "A full-stack web app that allows tourists to explore and purchase local items. Features include city descriptions, top destinations, local products, and session-based login.",
+    "tech": ["Spring Boot", "React", "TailwindCSS", "JavaScript"],
+    "github": "https://github.com/Rimjhim117/CityScape"
+  },
+  {
+    "title": "Personalized Recipe Recommendation System",
+    "description": "A hybrid recommender system using collaborative and content-based filtering to suggest recipes based on ingredients.",
+    "tech": ["Python", "Machine Learning", "Streamlit"],
+    "github": "https://github.com/Rimjhim117/Personalized_Recommendation_System"
+  },
+  {
+    "title": "Readora – Smart Book Recommendation Chatbot",
+    "description": "An intelligent chatbot built with IBM Watson Assistant that recommends books and interacts with users to enhance reading experiences.",
+    "tech": ["IBM Watson Assistant", "NLP", "React"],
+    "github": "https://github.com/Rimjhim117/readora_chatbot"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "Personal portfolio built using React and TailwindCSS with resume download and modern UI.",
+    "tech": ["React", "TailwindCSS", "GitHub Pages"],
+    "github": "https://github.com/Rimjhim117/rimjhim_portfolio"
+  },
+  {
+    "title": "Bank Management System",
+    "description": "A desktop application that simulates banking operations like login, deposit, withdrawal, transfer, loan request, and admin controls.",
+    "tech": ["Java", "Swing", "File I/O"],
+    "github": "https://github.com/Rimjhim117/BankManagementSystemGUI"
+  },
+  {
+    "title": "Blog Platform",
+    "description": "Full-stack blog platform built with the MERN stack. Features user authentication, CRUD operations for blog posts, and a responsive, modern frontend designed in a Figma-style.",
+    "tech": ["MongoDB", "Express", "React", "Node.js"],
+    "github": "https://github.com/Rimjhim117/blog_platform"
+  }
+]
