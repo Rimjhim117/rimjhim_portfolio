@@ -26,21 +26,6 @@ A modern, responsive portfolio website built with React for the frontend and Nod
 
     Version Control: Git & GitHub
 
-📁 Project Structure
-
-rimjhimportfolio/
-├── frontend/             # React frontend
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-└── backend/              # Node.js backend
-    ├── server.js
-    ├── messages.json
-    ├── projects.json
-    ├── package.json
-    └── ...
-
 🚀 Getting Started
 
 To run this project locally, follow these steps:
