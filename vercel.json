@@ -16,7 +16,6 @@
       "src": "/api/(.*)",
       "dest": "backend/server.js"
     }
-   
   ],
   "rewrites": [
     {
