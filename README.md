@@ -7,6 +7,8 @@ https://rimjhim-portfolio-five.vercel.app/?utm_source=chatgpt.com
 
 
 📁 Project Structure
+
+
 rimjhimportfolio/
 │
 ├── frontend/       # React frontend
