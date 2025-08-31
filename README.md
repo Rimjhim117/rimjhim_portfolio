@@ -2,8 +2,6 @@ Rimjhim's Portfolio
 
 A modern, responsive portfolio website built with React for the frontend and Node.js for the backend. It's designed to showcase my skills and projects while providing a contact form for visitors to get in touch.
 
-🔗 Live Demo: rimjhim-portfolio-five.vercel.app
-
 ⚡ Key Features
 
     Responsive Design: Optimized for a seamless viewing experience on desktop, tablet, and mobile devices.
@@ -72,7 +70,5 @@ This project is licensed under the MIT License.
 Rimjhim
 
     Email: rimjhimsrivastava971@gmail.com
-
-    Portfolio: rimjhim-portfolio-five.vercel.app
 
 
