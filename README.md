@@ -7,26 +7,34 @@ https://rimjhim-portfolio-five.vercel.app/?utm_source=chatgpt.com
 
 
 📁 Project Structure
-
-
 rimjhimportfolio/
-│
-├── frontend/# React frontend
 
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── postcss.config.js
-│   └── tailwind.config.js
-│
-├── backend/    # Node.js backend
+frontend/ – React frontend
 
-│   ├── server.js
-│   ├── messages.json
-│   ├── projects.json
-│   ├── package.json
-│   └── package-lock.json
+src/ – Source code (components, pages, styles, etc.)
+
+public/ – Public assets (index.html, images, favicon, etc.)
+
+package.json – Frontend dependencies and scripts
+
+package-lock.json – Lockfile for frontend
+
+postcss.config.js – PostCSS configuration
+
+tailwind.config.js – Tailwind CSS configuration
+
+backend/ – Node.js backend
+
+server.js – Main server file
+
+messages.json – JSON file for messages
+
+projects.json – JSON file for projects
+
+package.json – Backend dependencies and scripts
+
+package-lock.json – Lockfile for backend
+
 ⚡ Features
 
 Responsive Design – Works on desktop, tablet, and mobile.
