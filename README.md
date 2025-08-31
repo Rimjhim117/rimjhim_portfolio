@@ -11,7 +11,8 @@ https://rimjhim-portfolio-five.vercel.app/?utm_source=chatgpt.com
 
 rimjhimportfolio/
 │
-├── frontend/       # React frontend
+├── frontend/# React frontend
+
 │   ├── src/
 │   ├── public/
 │   ├── package.json
@@ -19,7 +20,8 @@ rimjhimportfolio/
 │   ├── postcss.config.js
 │   └── tailwind.config.js
 │
-├── backend/        # Node.js backend
+├── backend/    # Node.js backend
+
 │   ├── server.js
 │   ├── messages.json
 │   ├── projects.json
