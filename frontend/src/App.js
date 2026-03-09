@@ -8,10 +8,12 @@ import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 
 
-
-
-
 function App() {
+  useEffect(() => {
+    // Wake up the backend as soon as the site loads
+    fetch("https://rimjhim-portfolio.onrender.com/api/ping")
+      .catch(() => {}); // fire and forget
+  }, []);
   return (
     <div>
       <Navbar />
