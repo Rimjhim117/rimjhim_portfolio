@@ -70,9 +70,8 @@ export default function Contact() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
-          >
-            {loading ? "Sending..." : "Send Message"}
+            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
+            {loading? "Please wait, connecting to server...": "Send Message"}
           </button>
         </form>
 
