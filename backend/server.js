@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/api/ping", (req, res) => res.send("pong")); 
+
+// File paths for storing data
+
 // File paths for storing data
 const __dirname = path.resolve();
 const messagesFile = path.join(__dirname, "messages.json");
