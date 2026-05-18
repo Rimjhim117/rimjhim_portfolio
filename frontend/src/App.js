@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Achievements from "./components/Achievements";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import ExperienceAndResearch from "./components/ResearchAndIndustry";
@@ -17,6 +18,7 @@ function App() {
       <Intro />
       <About/>
       <ExperienceAndResearch />
+      <Achievements />
       <Skills/>
       <Projects/>
       <Certifications />

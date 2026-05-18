@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBookOpen, FaBriefcase, FaExternalLinkAlt, FaBuilding, FaChartLine, FaBrain } from "react-icons/fa";
+import { FaBookOpen, FaBriefcase, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function ExperienceAndResearch() {
@@ -20,30 +20,6 @@ export default function ExperienceAndResearch() {
       icon: <FaBriefcase className="text-blue-600 text-2xl" />,
       desc: "Gained hands-on experience in building AI solutions. Developed an AI-powered chatbot (Readora) leveraging NLP and IBM Watson Assistant for personalized recommendations.",
       borderColor: "border-blue-500",
-    },
-    {
-      type: "Virtual Program",
-      title: "Tata Group GenAI Virtual Program",
-      issuer: "Tata Group",
-      icon: <FaBrain className="text-indigo-600 text-2xl" />,
-      desc: "Completed an immersive program focused on Generative AI concepts, prompt engineering, and real-world enterprise applications.",
-      borderColor: "border-indigo-500",
-    },
-    {
-      type: "Virtual Experience",
-      title: "Data Analytics Virtual Experience",
-      issuer: "Deloitte Australia (Forage)",
-      icon: <FaChartLine className="text-pink-600 text-2xl" />,
-      desc: "Worked on practical tasks related to data quality assessment, data insights, and data presentation using modern analytics tools.",
-      borderColor: "border-pink-500",
-    },
-    {
-      type: "Industry Visit",
-      title: "Tata Consultancy Services (TCS) Industry Visit",
-      issuer: "TCS Awadh Park",
-      icon: <FaBuilding className="text-teal-600 text-2xl" />,
-      desc: "Participated in an industry visit to TCS, gaining insights into corporate workflows, enterprise software development, and agile practices.",
-      borderColor: "border-teal-500",
     },
   ];
 

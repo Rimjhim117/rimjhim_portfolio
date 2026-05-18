@@ -1,13 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaJava, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaReact,
-  FaGitAlt, FaGithub, FaCode, FaBrain, FaRobot, FaProjectDiagram, FaServer
+  FaCode, FaBrain, FaReact, FaServer, FaGitAlt
 } from "react-icons/fa";
-import { FaC } from "react-icons/fa6";
-import {
-  SiSpringboot, SiMysql, SiMongodb, SiStreamlit, SiNodedotjs, SiVercel, SiCplusplus
-} from "react-icons/si";
 
 export default function Skills() {
   const skillGroups = [
