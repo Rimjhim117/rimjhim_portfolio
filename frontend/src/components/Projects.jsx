@@ -8,7 +8,6 @@ export default function Projects() {
       title: "AI-Powered Smart Cloud Kitchen",
       description: "Built a full-stack AI-powered cloud kitchen platform integrating personalized recipe recommendations and food ordering. Designed hybrid recommendation engine using TF-IDF, BERT embeddings, and collaborative filtering.",
       tech: ["MERN", "FastAPI", "ML"],
-      github: "https://github.com/Rimjhim117",
       demo: "https://cloud-kitchen-frontend-culf.onrender.com"
     },
     {
