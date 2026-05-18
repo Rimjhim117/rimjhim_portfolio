@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaJava,
   FaPython,
@@ -84,8 +85,12 @@ export default function Skills() {
       <h2 className="text-4xl font-bold text-purple-700 mb-12">My Skills</h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-        {skillGroups.map((group) => (
-          <div
+        {skillGroups.map((group, index) => (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
             key={group.title}
             className="bg-purple-50 p-6 rounded-xl shadow hover:shadow-md transition"
           >
@@ -101,7 +106,7 @@ export default function Skills() {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

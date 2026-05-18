@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Projects() {
 
@@ -46,10 +47,14 @@ export default function Projects() {
       <h2 className="text-4xl font-bold text-purple-700 mb-12">Projects</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        {projects.map((project) => (
-          <div
+        {projects.map((project, index) => (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             key={project.title}
-            className="bg-purple-50 hover:bg-purple-100 p-6 rounded-xl shadow-md hover:shadow-xl transition border border-purple-200 text-left"
+            className="bg-purple-50 hover:bg-purple-100 p-6 rounded-xl shadow-md hover:shadow-xl transition border border-purple-200 text-left flex flex-col"
           >
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-xl font-semibold text-purple-700">
@@ -89,7 +94,7 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

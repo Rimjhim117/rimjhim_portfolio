@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaCode,
   FaLaptopCode,
@@ -105,8 +106,12 @@ export default function Certifications() {
       <h2 className="text-4xl font-bold text-purple-700 mb-12">Certifications & Achievements</h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {certificates.map((cert) => (
-          <div
+        {certificates.map((cert, index) => (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
             key={cert.title}
             className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border border-purple-100 text-left flex flex-col justify-center"
           >
@@ -119,7 +124,7 @@ export default function Certifications() {
                 <p className="text-sm text-gray-600 mt-1">{cert.issuer}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

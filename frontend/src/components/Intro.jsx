@@ -1,10 +1,16 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100">
-      <div className="flex-1 text-center md:text-left">
+      <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex-1 text-center md:text-left"
+      >
         <h1 className="text-4xl sm:text-5xl font-bold text-purple-800 mb-4">
           Hi, I'm Rimjhim Srivastava
         </h1>
@@ -38,14 +44,19 @@ export default function Intro() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="flex-1 flex justify-center md:justify-end">
+      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="flex-1 flex justify-center md:justify-end"
+      >
 <img
   src="/rimjhim_profile_centered.jpg"
   alt="Rimjhim Srivastava"
   className="w-72 h-72 object-cover rounded-full border-4 border-white shadow-lg"
 />
-      </div>
+      </motion.div>
     </section>
   );
 }

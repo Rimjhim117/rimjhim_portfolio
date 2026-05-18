@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUniversity, FaSchool } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -8,7 +9,13 @@ export default function About() {
       className="min-h-screen px-6 py-20 bg-gradient-to-b from-white to-purple-50 flex flex-col md:flex-row items-center justify-center gap-10"
     >
       {/* Text Content */}
-      <div className="md:w-1/2 text-center md:text-left">
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="md:w-1/2 text-center md:text-left"
+      >
         <h2 className="text-4xl font-bold text-purple-700 mb-4">About Me</h2>
         <p className="text-gray-700 text-lg leading-7 mb-4">
           I'm a <span className="font-semibold text-purple-600">Full-stack developer and AI/ML enthusiast</span> with hands-on experience building end-to-end intelligent web applications using MERN, FastAPI, and NLP-based recommendation systems.
@@ -41,16 +48,22 @@ export default function About() {
 
 
         </div>
-      </div>
+      </motion.div>
 
       {/* Profile Image */}
-      <div className="md:w-1/3 flex justify-center">
+      <motion.div 
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="md:w-1/3 flex justify-center"
+      >
         <img
           src="/About_photo.jpg"
           alt="Rimjhim Srivastava"
           className="w-72 h-auto rounded-xl shadow-xl border-4 border-white object-cover object-top"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

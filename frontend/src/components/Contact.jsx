@@ -1,12 +1,19 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
     <section id="contact" className="min-h-[60vh] px-6 py-20 bg-purple-50 text-center">
       <h2 className="text-4xl font-bold text-purple-700 mb-10">Contact Me</h2>
 
-      <div className="max-w-xl mx-auto space-y-6 text-gray-700">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-xl mx-auto space-y-6 text-gray-700"
+      >
         <p className="text-lg">
           I'm currently looking for new opportunities! Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
@@ -92,7 +99,7 @@ export default function Contact() {
             Download CV
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

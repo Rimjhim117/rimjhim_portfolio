@@ -1,5 +1,6 @@
 import React from "react";
-import { FaBookOpen, FaBriefcase } from "react-icons/fa";
+import { FaBookOpen, FaBriefcase, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function ResearchAndIndustry() {
   return (
@@ -8,7 +9,13 @@ export default function ResearchAndIndustry() {
       <div className="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         
         {/* Research Publication */}
-        <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-500 hover:shadow-lg transition">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-500 hover:shadow-lg transition"
+        >
           <div className="flex items-center gap-3 mb-4">
             <FaBookOpen className="text-purple-600 text-2xl" />
             <h3 className="text-xl font-bold text-gray-800">Research Publication</h3>
@@ -22,10 +29,24 @@ export default function ResearchAndIndustry() {
           <p className="text-sm text-gray-700 mt-4">
             Authored a research paper detailing the implementation of hybrid recommendation algorithms and NLP methodologies for personalized dietary solutions within a scalable cloud infrastructure.
           </p>
-        </div>
+          <a
+            href="https://ieeexplore.ieee.org/document/11506842"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 mt-5 text-purple-600 font-semibold hover:text-purple-800 transition"
+          >
+            View Publication <FaExternalLinkAlt />
+          </a>
+        </motion.div>
 
         {/* Industry Program */}
-        <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition"
+        >
           <div className="flex items-center gap-3 mb-4">
             <FaBriefcase className="text-blue-600 text-2xl" />
             <h3 className="text-xl font-bold text-gray-800">Industry Program</h3>
@@ -39,7 +60,7 @@ export default function ResearchAndIndustry() {
           <p className="text-sm text-gray-700 mt-4">
             Gained hands-on experience in building AI solutions. Developed an AI-powered chatbot (Readora) leveraging NLP and IBM Watson Assistant to understand user intent and provide personalized recommendations.
           </p>
-        </div>
+        </motion.div>
 
       </div>
     </section>
