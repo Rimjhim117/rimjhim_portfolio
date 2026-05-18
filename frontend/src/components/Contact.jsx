@@ -1,82 +1,51 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [successMessage, setSuccessMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccessMessage("");
-
-    try {
-      const res = await fetch("https://rimjhim-portfolio.onrender.com/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setSuccessMessage("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setSuccessMessage("Failed to send message.");
-      }
-    } catch (err) {
-      console.error(err);
-      setSuccessMessage("Something went wrong.");
-    }
-    setLoading(false);
-  };
-
   return (
     <section id="contact" className="min-h-[60vh] px-6 py-20 bg-purple-50 text-center">
       <h2 className="text-4xl font-bold text-purple-700 mb-10">Contact Me</h2>
 
       <div className="max-w-xl mx-auto space-y-6 text-gray-700">
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <p className="text-lg">
+          I'm currently looking for new opportunities! Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+
+        {/* Contact Form using mailto action */}
+        <form 
+          action="mailto:rimjhimsrivastava971@gmail.com" 
+          method="POST" 
+          encType="text/plain" 
+          className="flex flex-col gap-4"
+        >
           <input
             type="text"
-            name="name"
+            name="Name"
             placeholder="Your Name"
             required
-            value={formData.name}
-            onChange={handleChange}
             className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition"
           />
           <input
             type="email"
-            name="email"
+            name="Email"
             placeholder="Your Email"
             required
-            value={formData.email}
-            onChange={handleChange}
             className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition"
           />
           <textarea
-            name="message"
+            name="Message"
             placeholder="Your Message"
             required
             rows={4}
-            value={formData.message}
-            onChange={handleChange}
             className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition resize-none"
           />
           <button
             type="submit"
-            disabled={loading}
-            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
-            {loading? "Please wait, connecting to server...": "Send Message"}
+            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+          >
+            Send Message
           </button>
         </form>
-
-        {/* Success Message */}
-        {successMessage && <p className="text-green-600 mt-2">{successMessage}</p>}
 
         {/* Email */}
         <div className="flex items-center justify-center gap-3 text-lg mt-6">
@@ -115,12 +84,12 @@ export default function Contact() {
         {/* Resume Download */}
         <div className="mt-8">
           <a
-            href="/Rimjhim_Resume.pdf"
+            href="/Rimjhim_CV.pdf"
             download
             className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
           >
             <FaDownload />
-            Download Resume
+            Download CV
           </a>
         </div>
       </div>

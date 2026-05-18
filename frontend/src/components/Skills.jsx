@@ -9,6 +9,9 @@ import {
   FaGitAlt,
   FaGithub,
   FaCode,
+  FaBrain,
+  FaRobot,
+  FaProjectDiagram
 } from "react-icons/fa";
 import { FaC } from "react-icons/fa6";
 
@@ -16,17 +19,31 @@ import {
   SiSpringboot,
   SiMysql,
   SiMongodb,
-  SiStreamlit
+  SiStreamlit,
+  SiNodedotjs,
+  SiVercel,
+  SiCplusplus,
+  SiIbm
 } from "react-icons/si";
 
 export default function Skills() {
   const skillGroups = [
+    {
+      title: "AI/ML",
+      skills: [
+        { name: "Machine Learning", icon: <FaBrain className="text-pink-500" /> },
+        { name: "NLP", icon: <FaRobot className="text-blue-400" /> },
+        { name: "Recommendation Systems", icon: <FaProjectDiagram className="text-indigo-500" /> },
+        { name: "IBM Watson", icon: <SiIbm className="text-blue-700" /> },
+      ],
+    },
     {
       title: "Languages",
       skills: [
         { name: "Java", icon: <FaJava className="text-orange-500" /> },
         { name: "Python", icon: <FaPython className="text-blue-500" /> },
         { name: "C", icon: <FaC className="text-blue-600" /> },
+        { name: "C++", icon: <SiCplusplus className="text-blue-700" /> },
       ],
     },
     {
@@ -41,9 +58,10 @@ export default function Skills() {
     {
       title: "Backend & DB",
       skills: [
+        { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
         { name: "Spring Boot", icon: <SiSpringboot className="text-green-600" /> },
         { name: "SQL", icon: <SiMysql className="text-blue-700" /> },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> }, // ✅ Added
+        { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
       ],
     },
     {
@@ -52,7 +70,8 @@ export default function Skills() {
         { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
         { name: "GitHub", icon: <FaGithub className="text-black" /> },
         { name: "VS Code", icon: <FaCode className="text-blue-400" /> },
-        { name: "Streamlit", icon: <SiStreamlit className="text-pink-600" /> }, // ✅ Added
+        { name: "Streamlit", icon: <SiStreamlit className="text-pink-600" /> },
+        { name: "Vercel", icon: <SiVercel className="text-black" /> },
       ],
     },
   ];
