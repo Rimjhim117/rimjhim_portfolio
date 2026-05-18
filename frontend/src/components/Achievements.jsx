@@ -1,29 +1,44 @@
 import React from "react";
-import { FaBuilding, FaChartLine, FaBrain } from "react-icons/fa";
+import { FaTrophy, FaCode, FaUsers, FaIdBadge, FaLaptopCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Achievements() {
   const achievements = [
     {
-      title: "Tata Group GenAI Virtual Program",
-      issuer: "Tata Group",
-      icon: <FaBrain className="text-indigo-600 text-3xl" />,
-      desc: "Completed an immersive program focused on Generative AI concepts, prompt engineering, and real-world enterprise applications.",
-      color: "bg-indigo-50 border-indigo-200",
+      title: "1st Position at Technovanza 2026",
+      issuer: "CS/AIML Dept (AI-Powered Smart Cloud Kitchen)",
+      icon: <FaTrophy className="text-yellow-500 text-3xl" />,
+      color: "border-yellow-200 bg-yellow-50",
     },
     {
-      title: "Data Analytics Virtual Experience",
-      issuer: "Deloitte Australia (Forage)",
-      icon: <FaChartLine className="text-pink-600 text-3xl" />,
-      desc: "Worked on practical tasks related to data quality assessment, data insights, and data presentation using modern analytics tools.",
-      color: "bg-pink-50 border-pink-200",
+      title: "Solved 230+ GFG & 126 LeetCode Problems",
+      issuer: "GeeksforGeeks (Institute Rank 58) & LeetCode",
+      icon: <FaCode className="text-orange-600 text-3xl" />,
+      color: "border-orange-200 bg-orange-50",
     },
     {
-      title: "Tata Consultancy Services (TCS) Industry Visit",
-      issuer: "TCS Awadh Park",
-      icon: <FaBuilding className="text-teal-600 text-3xl" />,
-      desc: "Participated in an industry visit to TCS, gaining insights into corporate workflows, enterprise software development, and agile practices.",
-      color: "bg-teal-50 border-teal-200",
+      title: "Project Lead - AI Cloud Kitchen",
+      issuer: "Led a team of 2 across full-stack & ML integration",
+      icon: <FaUsers className="text-blue-600 text-3xl" />,
+      color: "border-blue-200 bg-blue-50",
+    },
+    {
+      title: "IEEE RCSM 2025 Paper Presentation",
+      issuer: "1st Int. Conf. on Recent Trends in Computing & Smart Mobility",
+      icon: <FaIdBadge className="text-purple-600 text-3xl" />,
+      color: "border-purple-200 bg-purple-50",
+    },
+    {
+      title: "HackDiwas 2.0 Participation",
+      issuer: "United Group of Institutions",
+      icon: <FaIdBadge className="text-pink-600 text-3xl" />,
+      color: "border-pink-200 bg-pink-50",
+    },
+    {
+      title: "UHACK 4.0 Participation",
+      issuer: "United Group of Institutions",
+      icon: <FaLaptopCode className="text-indigo-600 text-3xl" />,
+      color: "border-indigo-200 bg-indigo-50",
     },
   ];
 
@@ -36,25 +51,24 @@ export default function Achievements() {
         transition={{ duration: 0.8 }}
         className="text-4xl font-bold text-gray-800 mb-12 text-center"
       >
-        Virtual Experiences & Industry Visits
+        Achievements & Participations
       </motion.h2>
 
-      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((ach, index) => (
           <motion.div
             key={ach.title}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`p-6 rounded-2xl shadow-sm border ${ach.color} hover:shadow-lg transition-all duration-300 flex flex-col`}
+            transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+            className={`p-6 rounded-2xl shadow-sm border ${ach.color} hover:shadow-lg transition-all duration-300 flex flex-col justify-center items-center text-center`}
           >
-            <div className="flex items-center gap-4 mb-4">
+            <div className="mb-4 bg-white p-4 rounded-full shadow-sm">
               {ach.icon}
-              <h3 className="text-xl font-bold text-gray-800 leading-tight">{ach.title}</h3>
             </div>
-            <p className="text-sm font-bold text-gray-600 mb-3">{ach.issuer}</p>
-            <p className="text-gray-600 text-sm leading-relaxed">{ach.desc}</p>
+            <h3 className="text-lg font-bold text-gray-800 leading-tight mb-2">{ach.title}</h3>
+            <p className="text-sm font-medium text-gray-600">{ach.issuer}</p>
           </motion.div>
         ))}
       </div>

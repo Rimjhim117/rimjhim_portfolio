@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav className="fixed w-full top-0 z-50 bg-white shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between md:justify-end items-center">
         
         {/* Mobile Menu Button */}
@@ -25,14 +25,14 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8 items-center text-gray-700 font-medium text-sm lg:text-base">
+        <div className="hidden md:flex space-x-6 items-center text-gray-700 font-medium text-sm">
           {links.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-purple-600 transition duration-300">
               {link.name}
             </a>
           ))}
           <a href="#contact">
-            <button className="ml-2 bg-purple-600 text-white px-6 py-2 rounded-full shadow hover:bg-purple-700 hover:shadow-lg transition duration-300">
+            <button className="ml-4 bg-purple-600 text-white px-6 py-2 rounded-full shadow hover:bg-purple-700 transition duration-300">
               Contact Me
             </button>
           </a>
@@ -41,7 +41,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md absolute top-full left-0 w-full shadow-lg flex flex-col py-4 border-b border-gray-100">
+        <div className="md:hidden bg-white w-full flex flex-col py-2 shadow-lg border-t border-gray-100">
           {links.map((link) => (
             <a 
               key={link.name} 
@@ -52,7 +52,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <div className="px-6 py-3">
+          <div className="px-6 py-4 border-t border-gray-100">
             <a href="#contact" onClick={() => setIsOpen(false)}>
               <button className="w-full bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition duration-300">
                 Contact Me
