@@ -9,7 +9,7 @@ export default function About() {
       className="min-h-screen px-6 py-20 bg-gradient-to-b from-white to-purple-50 flex flex-col md:flex-row items-center justify-center gap-10"
     >
       {/* Text Content */}
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -46,13 +46,11 @@ export default function About() {
               </div>
             </div>
           </div>
-
-
         </div>
       </motion.div>
 
       {/* Profile Image */}
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
