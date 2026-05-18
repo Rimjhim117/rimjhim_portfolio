@@ -1,17 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaCode,
-  FaLaptopCode,
-  FaBrain,
-  FaFileExcel,
-  FaMedal,
-  FaIdBadge,
-  FaChartLine,
-  FaTrophy,
-  FaBuilding,
-  FaNetworkWired,
-  FaUsers
+  FaCode, FaLaptopCode, FaBrain, FaFileExcel, FaMedal, FaIdBadge, FaTrophy, FaUsers
 } from "react-icons/fa";
 
 export default function Certifications() {
@@ -39,27 +29,12 @@ export default function Certifications() {
     {
       title: "Introduction to Modern AI",
       issuer: "Cisco Networking Academy",
-      icon: <FaNetworkWired className="text-cyan-500 text-3xl" />,
+      icon: <FaLaptopCode className="text-cyan-500 text-3xl" />,
     },
     {
       title: "Python Programming",
       issuer: "GUVI (IICL)",
       icon: <FaLaptopCode className="text-blue-500 text-3xl" />,
-    },
-    {
-      title: "Tata Group GenAI Virtual Program",
-      issuer: "Tata Group",
-      icon: <FaBrain className="text-indigo-600 text-3xl" />,
-    },
-    {
-      title: "Data Analytics Virtual Experience",
-      issuer: "Deloitte Australia (Forage)",
-      icon: <FaChartLine className="text-indigo-600 text-3xl" />,
-    },
-    {
-      title: "Industry Visit",
-      issuer: "Tata Consultancy Services (TCS)",
-      icon: <FaBuilding className="text-gray-600 text-3xl" />,
     },
     {
       title: "Core Java",
@@ -103,25 +78,33 @@ export default function Certifications() {
       id="certifications"
       className="min-h-screen px-6 py-20 bg-gradient-to-b from-purple-50 to-white text-center"
     >
-      <h2 className="text-4xl font-bold text-purple-700 mb-12">Certifications & Achievements</h2>
+      <motion.h2 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl font-bold text-purple-700 mb-16"
+      >
+        Certifications & Achievements
+      </motion.h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((cert, index) => (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
+            transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             key={cert.title}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border border-purple-100 text-left flex flex-col justify-center"
+            className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-purple-100 text-left flex flex-col justify-center"
           >
             <div className="flex items-center gap-4 mb-3">
               <div className="min-w-[40px] flex justify-center">
                 {cert.icon}
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-purple-700 leading-tight">{cert.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{cert.issuer}</p>
+                <h3 className="text-lg font-bold text-gray-800 leading-tight mb-1">{cert.title}</h3>
+                <p className="text-sm text-gray-500 font-medium">{cert.issuer}</p>
               </div>
             </div>
           </motion.div>

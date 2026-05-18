@@ -10,8 +10,8 @@ export default function About() {
     >
       {/* Text Content */}
       <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="md:w-1/2 text-center md:text-left"
@@ -52,8 +52,8 @@ export default function About() {
 
       {/* Profile Image */}
       <motion.div 
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="md:w-1/3 flex justify-center"

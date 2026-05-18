@@ -8,8 +8,8 @@ export default function Contact() {
       <h2 className="text-4xl font-bold text-purple-700 mb-10">Contact Me</h2>
 
       <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="max-w-xl mx-auto space-y-6 text-gray-700"

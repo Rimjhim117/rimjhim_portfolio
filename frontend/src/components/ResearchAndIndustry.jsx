@@ -1,66 +1,99 @@
 import React from "react";
-import { FaBookOpen, FaBriefcase, FaExternalLinkAlt } from "react-icons/fa";
+import { FaBookOpen, FaBriefcase, FaExternalLinkAlt, FaBuilding, FaChartLine, FaBrain } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-export default function ResearchAndIndustry() {
-  return (
-    <section id="research" className="min-h-[60vh] px-6 py-20 bg-indigo-50 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-indigo-800 mb-10 text-center">Research & Industry Experience</h2>
-      <div className="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Research Publication */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-500 hover:shadow-lg transition"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <FaBookOpen className="text-purple-600 text-2xl" />
-            <h3 className="text-xl font-bold text-gray-800">Research Publication</h3>
-          </div>
-          <p className="text-lg font-semibold text-gray-900 leading-tight">
-            AI-Powered Smart Cloud Kitchen with Personalized Recipe Recommendation System
-          </p>
-          <p className="text-sm text-gray-600 italic mt-3 border-l-4 border-purple-300 pl-3">
-            Published at: 2025 IEEE 1st International Conference on Recent Trends in Computing and Smart Mobility (RCSM 2025)
-          </p>
-          <p className="text-sm text-gray-700 mt-4">
-            Authored a research paper detailing the implementation of hybrid recommendation algorithms and NLP methodologies for personalized dietary solutions within a scalable cloud infrastructure.
-          </p>
-          <a
-            href="https://ieeexplore.ieee.org/document/11506842"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 mt-5 text-purple-600 font-semibold hover:text-purple-800 transition"
-          >
-            View Publication <FaExternalLinkAlt />
-          </a>
-        </motion.div>
+export default function ExperienceAndResearch() {
+  const experiences = [
+    {
+      type: "Research",
+      title: "AI-Powered Smart Cloud Kitchen with Personalized Recipe Recommendation System",
+      issuer: "2025 IEEE 1st International Conference (RCSM 2025)",
+      icon: <FaBookOpen className="text-purple-600 text-2xl" />,
+      desc: "Authored a research paper detailing hybrid recommendation algorithms and NLP methodologies for personalized dietary solutions within a scalable cloud infrastructure.",
+      link: "https://ieeexplore.ieee.org/document/11506842",
+      borderColor: "border-purple-500",
+    },
+    {
+      type: "Internship",
+      title: "IBM PBEL Virtual Internship - Artificial Intelligence",
+      issuer: "IBM (2025)",
+      icon: <FaBriefcase className="text-blue-600 text-2xl" />,
+      desc: "Gained hands-on experience in building AI solutions. Developed an AI-powered chatbot (Readora) leveraging NLP and IBM Watson Assistant for personalized recommendations.",
+      borderColor: "border-blue-500",
+    },
+    {
+      type: "Virtual Program",
+      title: "Tata Group GenAI Virtual Program",
+      issuer: "Tata Group",
+      icon: <FaBrain className="text-indigo-600 text-2xl" />,
+      desc: "Completed an immersive program focused on Generative AI concepts, prompt engineering, and real-world enterprise applications.",
+      borderColor: "border-indigo-500",
+    },
+    {
+      type: "Virtual Experience",
+      title: "Data Analytics Virtual Experience",
+      issuer: "Deloitte Australia (Forage)",
+      icon: <FaChartLine className="text-pink-600 text-2xl" />,
+      desc: "Worked on practical tasks related to data quality assessment, data insights, and data presentation using modern analytics tools.",
+      borderColor: "border-pink-500",
+    },
+    {
+      type: "Industry Visit",
+      title: "Tata Consultancy Services (TCS) Industry Visit",
+      issuer: "TCS Awadh Park",
+      icon: <FaBuilding className="text-teal-600 text-2xl" />,
+      desc: "Participated in an industry visit to TCS, gaining insights into corporate workflows, enterprise software development, and agile practices.",
+      borderColor: "border-teal-500",
+    },
+  ];
 
-        {/* Industry Program */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <FaBriefcase className="text-blue-600 text-2xl" />
-            <h3 className="text-xl font-bold text-gray-800">Industry Program</h3>
-          </div>
-          <p className="text-lg font-semibold text-gray-900 leading-tight">
-            IBM PBEL Virtual Internship - Artificial Intelligence
-          </p>
-          <p className="text-sm font-medium text-blue-600 mt-2">
-            2025
-          </p>
-          <p className="text-sm text-gray-700 mt-4">
-            Gained hands-on experience in building AI solutions. Developed an AI-powered chatbot (Readora) leveraging NLP and IBM Watson Assistant to understand user intent and provide personalized recommendations.
-          </p>
-        </motion.div>
+  return (
+    <section id="experience" className="min-h-screen px-6 py-20 bg-indigo-50 flex flex-col items-center justify-center">
+      <motion.h2 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl font-bold text-indigo-900 mb-12 text-center"
+      >
+        Experience & Research
+      </motion.h2>
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        {experiences.map((exp, index) => (
+          <motion.div 
+            key={exp.title}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className={`bg-white p-6 rounded-2xl shadow-sm border-t-4 ${exp.borderColor} hover:shadow-lg transition-all duration-300 flex flex-col h-full`}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              {exp.icon}
+              <h3 className="text-sm font-bold tracking-wider text-gray-500 uppercase">{exp.type}</h3>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800 leading-tight mb-2">
+              {exp.title}
+            </h4>
+            <p className="text-sm font-semibold text-indigo-600 mb-4">
+              {exp.issuer}
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+              {exp.desc}
+            </p>
+            {exp.link && (
+              <a
+                href={exp.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 mt-6 text-purple-600 font-semibold hover:text-purple-800 transition"
+              >
+                View Publication <FaExternalLinkAlt />
+              </a>
+            )}
+          </motion.div>
+        ))}
 
       </div>
     </section>

@@ -6,8 +6,8 @@ export default function Intro() {
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100">
       <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         className="flex-1 text-center md:text-left"
       >
@@ -46,8 +46,8 @@ export default function Intro() {
         </div>
       </motion.div>
       <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="flex-1 flex justify-center md:justify-end"
       >
