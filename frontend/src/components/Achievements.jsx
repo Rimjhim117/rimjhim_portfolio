@@ -11,8 +11,14 @@ export default function Achievements() {
       color: "border-yellow-200 bg-yellow-50",
     },
     {
+      title: "IEEE Published Researcher",
+      issuer: "IEEE Xplore Digital Library — RCSM 2025, MANIT Bhopal",
+      icon: <FaIdBadge className="text-purple-600 text-3xl" />,
+      color: "border-purple-200 bg-purple-50",
+    },
+    {
       title: "Solved 230+ GFG & 126 LeetCode Problems",
-      issuer: "GeeksforGeeks (Institute Rank 58) & LeetCode",
+      issuer: "GeeksforGeeks (Institute Rank 58) & LeetCode (17 Hard)",
       icon: <FaCode className="text-orange-600 text-3xl" />,
       color: "border-orange-200 bg-orange-50",
     },
@@ -23,10 +29,16 @@ export default function Achievements() {
       color: "border-blue-200 bg-blue-50",
     },
     {
-      title: "IEEE RCSM 2025 Paper Presentation",
-      issuer: "1st Int. Conf. on Recent Trends in Computing & Smart Mobility",
-      icon: <FaIdBadge className="text-purple-600 text-3xl" />,
-      color: "border-purple-200 bg-purple-50",
+      title: "UHACK 4.0 — Team DeepThink Labs",
+      issuer: "UGI, in association with IEEE, Google Developer Groups & IIC",
+      icon: <FaLaptopCode className="text-indigo-600 text-3xl" />,
+      color: "border-indigo-200 bg-indigo-50",
+    },
+    {
+      title: "Smart India Hackathon (SIH) 2025",
+      issuer: "Government of India Initiative",
+      icon: <FaLaptopCode className="text-green-600 text-3xl" />,
+      color: "border-green-200 bg-green-50",
     },
     {
       title: "HackDiwas 2.0 Participation",
@@ -35,10 +47,10 @@ export default function Achievements() {
       color: "border-pink-200 bg-pink-50",
     },
     {
-      title: "UHACK 4.0 Participation",
-      issuer: "United Group of Institutions",
-      icon: <FaLaptopCode className="text-indigo-600 text-3xl" />,
-      color: "border-indigo-200 bg-indigo-50",
+      title: "TCS Industry Visit",
+      issuer: "Selected among a handful of students — TCS Varanasi, Sep 2024",
+      icon: <FaUsers className="text-teal-600 text-3xl" />,
+      color: "border-teal-200 bg-teal-50",
     },
   ];
 

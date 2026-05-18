@@ -9,7 +9,7 @@ export default function About() {
       className="min-h-screen px-6 py-20 bg-gradient-to-b from-white to-purple-50 flex flex-col md:flex-row items-center justify-center gap-10"
     >
       {/* Text Content */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -39,8 +39,9 @@ export default function About() {
               <div className="flex items-start gap-3">
                 <FaSchool className="text-purple-600 text-xl mt-1 min-w-[20px]" />
                 <div>
-                  <p className="text-base text-gray-800 font-medium">Schooling</p>
-                  <p className="text-sm text-gray-600">St. Anthony's Convent Girls’ Inter College, Prayagraj</p>
+                  <p className="text-base text-gray-800 font-medium">Secondary Education</p>
+                  <p className="text-sm text-gray-600">St. Anthony's Convent Girls' Inter College, Prayagraj</p>
+                  <p className="text-xs text-gray-500 mt-1">12th — 2021 · UP Board &nbsp;|&nbsp; 10th — 2019 · UP Board</p>
                 </div>
               </div>
             </div>
@@ -51,7 +52,7 @@ export default function About() {
       </motion.div>
 
       {/* Profile Image */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

@@ -7,38 +7,45 @@ export default function Projects() {
   const projects = [
     {
       title: "AI-Powered Smart Cloud Kitchen",
-      description: "Built a full-stack AI-powered cloud kitchen platform integrating personalized recipe recommendations and food ordering. Designed hybrid recommendation engine using TF-IDF, BERT embeddings, and collaborative filtering.",
-      tech: ["MERN", "FastAPI", "ML"],
+      description: "Built a production-deployed full-stack cloud kitchen platform with AI-driven food ordering and personalized recipe discovery. Engineered a hybrid recommendation engine combining TF-IDF, BERT embeddings, and collaborative filtering. IEEE-published and awarded 1st position at Technovanza 2026.",
+      tech: ["MERN", "FastAPI", "ML", "BERT"],
       demo: "https://cloud-kitchen-frontend-culf.onrender.com"
     },
     {
-      title: "CityScape: Marketplace for local Goods",
-      description: "A full-stack web app that allows tourists to explore and purchase local items. Features include city descriptions, top destinations, local products, and session-based login.",
+      title: "AI-Powered Hybrid Tutor Finder",
+      description: "Built a full-stack AI-powered tutor-student matching platform at UHACK 4.0 (Team: DeepThink Labs) with role-based dashboards for students, teachers, and parents. Trained 3 neural network models using brain.js for tutor compatibility scoring, student performance prediction, and personalized recommendations. Features 250+ question quiz system with timed focus mode, tab-switch detection, and Google Gemini-powered AI chatbot with gamified learning.",
+      tech: ["React", "Node.js", "MongoDB", "brain.js", "JWT"],
+      github: "https://github.com/AniketMishra8/Tutor-Finder",
+      demo: "https://deepthinktut.netlify.app"
+    },
+    {
+      title: "CityScape: Marketplace for Local Goods",
+      description: "Developed platform enabling users to explore cities and discover local goods. Implemented secure session-based login and responsive UI using Spring Boot backend with React frontend.",
       tech: ["Spring Boot", "React", "TailwindCSS", "JavaScript"],
       github: "https://github.com/Rimjhim117/CityScape"
     },
     {
       title: "Personal Blog Platform",
-      description: "Developed full-stack blogging platform with JWT-based authentication and CRUD operations. Implemented responsive design and optimized database queries for improved performance.",
+      description: "Developed full-stack blogging platform with JWT-based authentication and CRUD operations. Optimized MongoDB queries and implemented responsive UI for improved cross-device usability.",
       tech: ["MERN"],
       github: "https://github.com/Rimjhim117/blog-platform"
     },
     {
       title: "Readora - AI Book Recommendation Chatbot",
-      description: "Built AI-powered chatbot using NLP and machine learning for personalized book recommendations. Designed conversational flows and integrated Watson Assistant APIs for enhanced user experience.",
+      description: "Built conversational AI chatbot using NLP and ML for personalized book recommendations with multi-turn dialogue support. Integrated IBM Watson Assistant APIs for intent recognition and context-aware conversational flows. Developed as capstone project for IBM PBEL Virtual Internship.",
       tech: ["Python", "NLP", "IBM Watson"],
       github: "https://github.com/Rimjhim117/readora_chatbot"
     },
     {
       title: "Bank Management System",
-      description: "A desktop application that simulates banking operations like login, deposit, withdrawal, transfer, loan request, and admin controls.",
+      description: "Developed desktop application simulating banking operations including login, deposit, withdrawal, transfer, and loan requests. Built GUI using Java Swing with admin controls.",
       tech: ["Java", "Swing", "File I/O"],
       github: "https://github.com/Rimjhim117/BankManagementSystemGUI"
     },
     {
       title: "Portfolio Website",
-      description: "Personal portfolio built using React and TailwindCSS with resume download and modern UI.",
-      tech: ["React", "TailwindCSS", "GitHub Pages"],
+      description: "Built responsive personal portfolio with backend support, project showcase, and contact form. Deployed on Vercel with modern, animated design.",
+      tech: ["React", "Node.js", "TailwindCSS", "Vercel"],
       github: "https://github.com/Rimjhim117/rimjhim_portfolio"
     }
   ];

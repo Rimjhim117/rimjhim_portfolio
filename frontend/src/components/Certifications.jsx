@@ -9,41 +9,55 @@ export default function Certifications() {
     {
       title: "Machine Learning",
       issuer: "IIIT Allahabad",
+      year: "2024",
       icon: <FaBrain className="text-purple-500 text-3xl" />,
-    },
-    {
-      title: "Introduction to Modern AI",
-      issuer: "Cisco Networking Academy",
-      icon: <FaLaptopCode className="text-cyan-500 text-3xl" />,
-    },
-    {
-      title: "Python Programming",
-      issuer: "GUVI (IICL)",
-      icon: <FaLaptopCode className="text-blue-500 text-3xl" />,
     },
     {
       title: "Core Java",
       issuer: "United College of Engineering and Research",
+      year: "2023",
       icon: <FaCode className="text-orange-500 text-3xl" />,
+    },
+    {
+      title: "Web Development",
+      issuer: "Internshala",
+      year: "2024",
+      icon: <FaLaptopCode className="text-cyan-500 text-3xl" />,
     },
     {
       title: "Microsoft Excel",
       issuer: "Coursera",
+      year: "2024",
       icon: <FaFileExcel className="text-green-600 text-3xl" />,
     },
     {
-      title: "Naukri NCAT Certificate",
-      issuer: "Naukri Campus",
-      icon: <FaMedal className="text-pink-600 text-3xl" />,
+      title: "Python Programming",
+      issuer: "GUVI (in association with HCL Technologies)",
+      year: "2025",
+      icon: <FaLaptopCode className="text-blue-500 text-3xl" />,
     },
     {
       title: "SpringBoot Assessment",
       issuer: "LearnTube.ai",
+      year: "2025",
       icon: <FaCode className="text-green-600 text-3xl" />,
     },
     {
-      title: "IBM PBEL Virtual Internship Certificate",
+      title: "Introduction to Modern AI",
+      issuer: "Cisco Networking Academy",
+      year: "2025",
+      icon: <FaLaptopCode className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Naukri NCAT Certificate",
+      issuer: "Naukri Campus",
+      year: "2025",
+      icon: <FaMedal className="text-pink-600 text-3xl" />,
+    },
+    {
+      title: "IBM PBEL Virtual Internship",
       issuer: "IBM",
+      year: "2025",
       icon: <FaMedal className="text-blue-600 text-3xl" />,
     },
   ];
@@ -63,7 +77,7 @@ export default function Certifications() {
         Certifications & Courses
       </motion.h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {certificates.map((cert, index) => (
           <motion.div
             initial={{ opacity: 0 }}
@@ -78,6 +92,7 @@ export default function Certifications() {
             </div>
             <h3 className="text-md font-bold text-gray-800 leading-tight mb-1">{cert.title}</h3>
             <p className="text-xs text-gray-500 font-medium">{cert.issuer}</p>
+            {cert.year && <p className="text-xs text-purple-400 font-semibold mt-1">{cert.year}</p>}
           </motion.div>
         ))}
       </div>

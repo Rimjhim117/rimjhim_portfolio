@@ -19,7 +19,7 @@ export default function Intro() {
         </p>
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
           <a
-            href="/Rimjhim_Resume.pdf"
+            href="/Rimjhim_Resume-1.pdf"
             download
             className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300 shadow"
           >
