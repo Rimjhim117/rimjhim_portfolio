@@ -45,6 +45,14 @@ export default function ExperienceAndResearch() {
       desc: "Participated in an industry visit to TCS, gaining insights into corporate workflows, enterprise software development, and agile practices.",
       borderColor: "border-teal-500",
     },
+    {
+      type: "Internship",
+      title: "Full-Stack Development Internship",
+      issuer: "Skillbit Technologies",
+      icon: <FaBriefcase className="text-orange-600 text-2xl" />,
+      desc: "Completed a full-stack development internship (Jul 2025 - Aug 2025), focusing on building responsive web interfaces and robust backend integration.",
+      borderColor: "border-orange-500",
+    },
   ];
 
   return (

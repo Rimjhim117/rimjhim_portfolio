@@ -41,6 +41,11 @@ export default function Certifications() {
       issuer: "LearnTube.ai",
       icon: <FaCode className="text-green-600 text-3xl" />,
     },
+    {
+      title: "IBM PBEL Virtual Internship Certificate",
+      issuer: "IBM",
+      icon: <FaMedal className="text-blue-600 text-3xl" />,
+    },
   ];
 
   return (
