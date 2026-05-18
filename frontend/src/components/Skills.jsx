@@ -11,7 +11,8 @@ import {
   FaCode,
   FaBrain,
   FaRobot,
-  FaProjectDiagram
+  FaProjectDiagram,
+  FaServer
 } from "react-icons/fa";
 import { FaC } from "react-icons/fa6";
 
@@ -22,8 +23,7 @@ import {
   SiStreamlit,
   SiNodedotjs,
   SiVercel,
-  SiCplusplus,
-  SiIbm
+  SiCplusplus
 } from "react-icons/si";
 
 export default function Skills() {
@@ -34,7 +34,7 @@ export default function Skills() {
         { name: "Machine Learning", icon: <FaBrain className="text-pink-500" /> },
         { name: "NLP", icon: <FaRobot className="text-blue-400" /> },
         { name: "Recommendation Systems", icon: <FaProjectDiagram className="text-indigo-500" /> },
-        { name: "IBM Watson", icon: <SiIbm className="text-blue-700" /> },
+        { name: "IBM Watson", icon: <FaServer className="text-blue-700" /> },
       ],
     },
     {
