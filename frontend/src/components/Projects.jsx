@@ -9,7 +9,7 @@ export default function Projects() {
       title: "AI-Powered Smart Cloud Kitchen",
       description: "Built a production-deployed full-stack cloud kitchen platform with AI-driven food ordering and personalized recipe discovery. Engineered a hybrid recommendation engine combining TF-IDF, BERT embeddings, and collaborative filtering. IEEE-published and awarded 1st position at Technovanza 2026.",
       tech: ["MERN", "FastAPI", "ML", "BERT"],
-      demo: "https://cloud-kitchen-frontend-culf.onrender.com"
+      demo: "https://cloud-kitchen-frontend-eulf.onrender.com"
     },
     {
       title: "AI-Powered Hybrid Tutor Finder",
@@ -28,7 +28,7 @@ export default function Projects() {
       title: "Personal Blog Platform",
       description: "Developed full-stack blogging platform with JWT-based authentication and CRUD operations. Optimized MongoDB queries and implemented responsive UI for improved cross-device usability.",
       tech: ["MERN"],
-      github: "https://github.com/Rimjhim117/blog-platform"
+      github: "https://github.com/Rimjhim117/blog_platform"
     },
     {
       title: "Readora - AI Book Recommendation Chatbot",
