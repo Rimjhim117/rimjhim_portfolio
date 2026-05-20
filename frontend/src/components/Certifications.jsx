@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaCode, FaLaptopCode, FaBrain, FaFileExcel, FaMedal
+  FaCode, FaLaptopCode, FaBrain, FaFileExcel, FaMedal, FaCloud
 } from "react-icons/fa";
 
 export default function Certifications() {
@@ -55,10 +55,16 @@ export default function Certifications() {
       icon: <FaMedal className="text-pink-600 text-3xl" />,
     },
     {
-      title: "IBM PBEL Virtual Internship",
-      issuer: "IBM",
+      title: "Tata Crucible Campus Quiz 2025",
+      issuer: "Tata Group",
       year: "2025",
-      icon: <FaMedal className="text-blue-600 text-3xl" />,
+      icon: <FaMedal className="text-yellow-500 text-3xl" />,
+    },
+    {
+      title: "Cloud Computing",
+      issuer: "NPTEL – IIT Kharagpur",
+      year: "Jul–Oct 2025",
+      icon: <FaCloud className="text-sky-500 text-3xl" />,
     },
   ];
 
