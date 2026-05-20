@@ -91,7 +91,7 @@ export default function Contact() {
         {/* Resume Download */}
         <div className="mt-8">
           <a
-            href="/Rimjhim_Resume-1.pdf"
+            href="/Rimjhim_Cv.pdf"
             download
             className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
           >
