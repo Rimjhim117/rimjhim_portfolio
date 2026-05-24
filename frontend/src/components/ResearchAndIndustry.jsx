@@ -18,7 +18,7 @@ export default function ExperienceAndResearch() {
       title: "IBM PBEL Virtual Internship — Artificial Intelligence",
       issuer: "IBM (2025)",
       icon: <FaBriefcase className="text-blue-600 text-2xl" />,
-      desc: "Selected for stipend-based virtual internship focused on applied Artificial Intelligence. Developed AI-powered chatbot (Readora) leveraging NLP and IBM Watson Assistant for personalized recommendations.",
+      desc: "Selected for stipend-based virtual internship focused on applied Artificial Intelligence. Developed AI-powered chatbot (Readora) leveraging IBM Watson Assistant for personalized recommendations.",
       borderColor: "border-blue-500",
     },
     {
