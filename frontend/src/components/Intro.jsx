@@ -15,7 +15,7 @@ export default function Intro() {
           Hi, I'm Rimjhim Srivastava
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 mb-6">
-          IT Student | Full-Stack Developer | AI/ML Enthusiast
+          Full-Stack Developer
         </p>
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
           <a
