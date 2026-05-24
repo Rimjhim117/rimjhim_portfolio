@@ -19,22 +19,31 @@ export default function Projects() {
       demo: "https://deepthinktut.netlify.app"
     },
     {
+      title: "Readora - AI Book Recommendation Chatbot",
+      description: "Architected a premium full-stack book recommendation chatbot using React and Express. Integrated IBM Watson Web Chat with client-side event hooks to dynamically query REST API recommendation endpoints. Implemented a custom quote-safe CSV database parser and premium UI styled with responsive, pure CSS 3D physical book card animations.",
+      tech: ["React.js", "Node.js", "Express.js", "IBM Watson", "CSS 3D", "REST APIs"],
+      github: "https://github.com/Rimjhim117/readora_chatbot",
+      demo: "https://readora-chatbot.onrender.com"
+    },
+    {
+      title: "Offline Semantic Chat Reply Recommender",
+      description: "Designed a context-aware chat reply recommendation engine. Engineered an offline hybrid matcher combining Sentence-Transformers (all-MiniLM-L6-v2) for semantic intent recognition and TF-IDF for keyword matching. Developed an interactive Streamlit simulator dashboard, a custom CSV/Excel dataset uploader, and Leave-One-Out cross-validation to assess semantic retrieval accuracy.",
+      tech: ["Python", "Streamlit", "Sentence-Transformers", "Scikit-Learn", "NLP"],
+      github: "https://github.com/Rimjhim117/Offline_chat_reply_recommendationsystem"
+    },
+    {
       title: "CityScape: Marketplace for Local Goods",
-      description: "Developed platform enabling users to explore cities and discover local goods. Implemented secure session-based login and responsive UI using Spring Boot backend with React frontend.",
-      tech: ["Spring Boot", "React", "TailwindCSS", "JavaScript"],
-      github: "https://github.com/Rimjhim117/CityScape"
+      description: "Developed a premium travel discovery and local e-commerce platform using React and Spring Boot. Integrated Gemini AI for personalized day-by-day itineraries alongside real-time currency conversion and weather tools. Features a glassmorphic user interface, shopping cart, and secure session-based authentication with persistent state.",
+      tech: ["Spring Boot", "React", "TailwindCSS", "Gemini AI", "REST APIs"],
+      github: "https://github.com/Rimjhim117/Market-Place-for-Local-Goods",
+      demo: "https://cityscape-frontend.onrender.com"
     },
     {
       title: "Personal Blog Platform",
-      description: "Developed full-stack blogging platform with JWT-based authentication and CRUD operations. Optimized MongoDB queries and implemented responsive UI for improved cross-device usability.",
-      tech: ["MERN"],
-      github: "https://github.com/Rimjhim117/blog_platform"
-    },
-    {
-      title: "Readora - AI Book Recommendation Chatbot",
-      description: "Built conversational AI chatbot using NLP and ML for personalized book recommendations with multi-turn dialogue support. Integrated IBM Watson Assistant APIs for intent recognition and context-aware conversational flows. Developed as capstone project for IBM PBEL Virtual Internship.",
-      tech: ["Python", "NLP", "IBM Watson"],
-      github: "https://github.com/Rimjhim117/readora_chatbot"
+      description: "Created a full-stack blogging platform using MongoDB, Express, React, and Node.js. Styled with Tailwind CSS, it features secure JWT-based registration and login, CRUD operations for blog posts, Unsplash-powered cover images, likes, bookmarking, and local storage auto-save drafts.",
+      tech: ["MERN", "TailwindCSS", "JWT", "REST APIs"],
+      github: "https://github.com/Rimjhim117/blog_platform",
+      demo: "https://blog-platform-42z2.onrender.com/"
     },
     {
       title: "Bank Management System",
