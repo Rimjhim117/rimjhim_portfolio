@@ -19,7 +19,7 @@ export default function Navbar() {
         
         {/* Mobile Menu Button */}
         <div className="md:hidden flex w-full justify-end">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-purple-700 text-2xl focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-indigo-600 text-2xl focus:outline-none">
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
@@ -27,12 +27,12 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6 items-center text-gray-700 font-medium text-sm">
           {links.map((link) => (
-            <a key={link.name} href={link.href} className="hover:text-purple-600 transition duration-300">
+            <a key={link.name} href={link.href} className="hover:text-indigo-600 transition duration-300">
               {link.name}
             </a>
           ))}
           <a href="#contact">
-            <button className="ml-4 bg-purple-600 text-white px-6 py-2 rounded-full shadow hover:bg-purple-700 transition duration-300">
+            <button className="ml-4 bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition duration-300">
               Contact Me
             </button>
           </a>
@@ -47,14 +47,14 @@ export default function Navbar() {
               key={link.name} 
               href={link.href} 
               onClick={() => setIsOpen(false)}
-              className="px-6 py-3 text-gray-700 font-medium hover:bg-purple-50 hover:text-purple-700 transition"
+              className="px-6 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 transition"
             >
               {link.name}
             </a>
           ))}
           <div className="px-6 py-4 border-t border-gray-100">
             <a href="#contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition duration-300">
+              <button className="w-full bg-indigo-600 text-white px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition duration-300">
                 Contact Me
               </button>
             </a>

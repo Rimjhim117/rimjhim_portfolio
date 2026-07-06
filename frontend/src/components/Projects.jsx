@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export default function Projects() {
 
@@ -64,11 +63,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
         {projects.map((project, index) => (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+          <div
             key={project.title}
             className="bg-white hover:bg-slate-50/50 p-6 rounded-xl shadow-md hover:shadow-xl transition border border-slate-200 text-left flex flex-col"
           >
@@ -110,7 +105,7 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import {
   FaCode, FaBrain, FaReact, FaServer, FaGitAlt
 } from "react-icons/fa";
@@ -61,24 +60,14 @@ export default function Skills() {
 
   return (
     <section id="skills" className="min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center">
-      <motion.h2 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl font-bold text-slate-800 mb-16 text-center"
-      >
+      <h2 className="text-4xl font-bold text-slate-800 mb-16 text-center">
         Technical Arsenal
-      </motion.h2>
+      </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillGroups.map((group, index) => (
-          <motion.div
+          <div
             key={group.title}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200"
           >
             {group.icon}
@@ -93,7 +82,7 @@ export default function Skills() {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

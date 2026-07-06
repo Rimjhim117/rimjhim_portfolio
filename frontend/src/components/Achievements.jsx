@@ -1,6 +1,4 @@
-import React from "react";
 import { FaTrophy, FaCode, FaUsers, FaIdBadge, FaLaptopCode } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export default function Achievements() {
   const achievements = [
@@ -48,24 +46,14 @@ export default function Achievements() {
 
   return (
     <section id="achievements" className="min-h-[50vh] px-6 py-20 bg-slate-50 flex flex-col items-center justify-center">
-      <motion.h2 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl font-bold text-slate-800 mb-12 text-center"
-      >
+      <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
         Achievements & Participations
-      </motion.h2>
+      </h2>
 
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((ach, index) => (
-          <motion.div
+          <div
             key={ach.title}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             className="p-6 rounded-2xl shadow-sm bg-white border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex flex-col justify-center items-center text-center"
           >
             <div className="mb-4 bg-slate-50 p-4 rounded-full">
@@ -73,7 +61,7 @@ export default function Achievements() {
             </div>
             <h3 className="text-lg font-bold text-slate-800 leading-tight mb-2">{ach.title}</h3>
             <p className="text-sm font-medium text-slate-500">{ach.issuer}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

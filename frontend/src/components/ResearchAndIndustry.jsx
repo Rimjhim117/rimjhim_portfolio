@@ -1,6 +1,5 @@
 import React from "react";
 import { FaBookOpen, FaBriefcase, FaExternalLinkAlt, FaBuilding, FaChartLine, FaBrain } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export default function ExperienceAndResearch() {
   const experiences = [
@@ -51,24 +50,14 @@ export default function ExperienceAndResearch() {
 
   return (
     <section id="experience" className="min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center">
-      <motion.h2 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl font-bold text-slate-800 mb-12 text-center"
-      >
+      <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
         Experience & Research
-      </motion.h2>
+      </h2>
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         {experiences.map((exp, index) => (
-          <motion.div 
+          <div 
             key={exp.title}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex flex-col h-full"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -94,7 +83,7 @@ export default function ExperienceAndResearch() {
                 View Publication <FaExternalLinkAlt />
               </a>
             )}
-          </motion.div>
+          </div>
         ))}
 
       </div>
