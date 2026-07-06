@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-20 bg-gradient-to-b from-white to-purple-50 flex flex-col md:flex-row items-center justify-center gap-10"
+      className="min-h-screen px-6 py-20 bg-gradient-to-b from-white to-slate-50 flex flex-col md:flex-row items-center justify-center gap-10"
     >
       {/* Text Content */}
       <motion.div
@@ -16,9 +16,9 @@ export default function About() {
         transition={{ duration: 0.8 }}
         className="md:w-1/2 text-center md:text-left"
       >
-        <h2 className="text-4xl font-bold text-purple-700 mb-4">About Me</h2>
+        <h2 className="text-4xl font-bold text-slate-800 mb-4">About Me</h2>
         <p className="text-gray-700 text-lg leading-7 mb-4">
-          I am an <span className="font-semibold text-purple-600">IT Graduate</span> specializing in building intelligent web applications, with proven experience across MERN, Spring Boot, FastAPI, and NLP-based recommendation systems.
+          I am an <span className="font-semibold text-indigo-600">IT Graduate</span> specializing in building intelligent web applications, with proven experience across MERN, Spring Boot, FastAPI, and NLP-based recommendation systems.
         </p>
         <p className="text-gray-700 text-lg leading-7 mb-6">
           I have a proven track record of delivering production-ready, data-driven products—combining strong backend fundamentals, database design, frontend polish, and applied machine learning to solve real-world problems.
@@ -27,17 +27,17 @@ export default function About() {
         <div className="space-y-6">
           {/* Education Section */}
           <div>
-            <h3 className="text-xl font-bold text-gray-800 mb-3 border-b-2 border-purple-200 inline-block pb-1">Education</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-3 border-b-2 border-indigo-200 inline-block pb-1">Education</h3>
             <div className="space-y-3 mt-2">
               <div className="flex items-start gap-3">
-                <FaUniversity className="text-purple-600 text-xl mt-1 min-w-[20px]" />
+                <FaUniversity className="text-indigo-600 text-xl mt-1 min-w-[20px]" />
                 <div>
                   <p className="text-base text-gray-800 font-medium">B.Tech in Information Technology (2022–2026)</p>
                   <p className="text-sm text-gray-600">United College of Engineering and Research, Prayagraj • CGPA: 8.03</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaSchool className="text-purple-600 text-xl mt-1 min-w-[20px]" />
+                <FaSchool className="text-indigo-600 text-xl mt-1 min-w-[20px]" />
                 <div>
                   <p className="text-base text-gray-800 font-medium">Schooling</p>
                   <p className="text-sm text-gray-600">St. Anthony's Convent Girls' Inter College, Prayagraj</p>

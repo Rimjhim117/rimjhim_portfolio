@@ -20,8 +20,8 @@ export default function Projects() {
     },
     {
       title: "Readora - AI Book Recommendation Chatbot",
-      description: "Architected a premium full-stack book recommendation chatbot using React and Express. Integrated IBM Watson Web Chat with client-side event hooks to dynamically query REST API recommendation endpoints. Implemented a custom quote-safe CSV database parser and premium UI styled with responsive, pure CSS 3D physical book card animations.",
-      tech: ["React.js", "Node.js", "Express.js", "IBM Watson", "CSS 3D", "REST APIs"],
+      description: "Architected a premium full-stack book recommendation chatbot using React and Express. Integrated IBM Watson Web Chat with client-side event hooks to dynamically query REST API recommendation endpoints. Implemented a custom quote-safe CSV database parser and a highly responsive, clean user interface.",
+      tech: ["React.js", "Node.js", "Express.js", "IBM Watson", "CSS3", "REST APIs"],
       github: "https://github.com/Rimjhim117/readora_chatbot",
       demo: "https://readora-chatbot.onrender.com"
     },
@@ -59,8 +59,8 @@ export default function Projects() {
     }
   ];
   return (
-    <section id="projects" className="min-h-screen px-6 py-20 bg-white text-center">
-      <h2 className="text-4xl font-bold text-purple-700 mb-12">Projects</h2>
+    <section id="projects" className="min-h-screen px-6 py-20 bg-slate-50 text-center">
+      <h2 className="text-4xl font-bold text-slate-800 mb-12">Projects</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
         {projects.map((project, index) => (
@@ -70,10 +70,10 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             key={project.title}
-            className="bg-purple-50 hover:bg-purple-100 p-6 rounded-xl shadow-md hover:shadow-xl transition border border-purple-200 text-left flex flex-col"
+            className="bg-white hover:bg-slate-50/50 p-6 rounded-xl shadow-md hover:shadow-xl transition border border-slate-200 text-left flex flex-col"
           >
             <div className="flex justify-between items-center mb-3">
-              <h3 className="text-xl font-semibold text-purple-700">
+              <h3 className="text-xl font-semibold text-slate-800">
                 {project.title}
               </h3>
               <div className="flex gap-3">
@@ -82,7 +82,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-purple-700 hover:text-purple-900"
+                    className="text-indigo-600 hover:text-indigo-800"
                   >
                     <FaExternalLinkAlt size={20} />
                   </a>
@@ -92,19 +92,19 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-purple-700 hover:text-purple-900"
+                    className="text-indigo-600 hover:text-indigo-800"
                   >
                     <FaGithub size={24} />
                   </a>
                 )}
               </div>
             </div>
-            <p className="text-gray-600 mb-3">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mt-4">
+            <p className="text-gray-600 mb-3 text-sm leading-relaxed">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mt-auto pt-4">
               {project.tech.map((techItem) => (
                 <span
                   key={techItem}
-                  className="text-sm bg-purple-100 text-purple-700 px-2 py-1 rounded-full"
+                  className="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-medium"
                 >
                   {techItem}
                 </span>

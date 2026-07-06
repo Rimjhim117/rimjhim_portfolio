@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[60vh] px-6 py-20 bg-purple-50 text-center">
-      <h2 className="text-4xl font-bold text-purple-700 mb-10">Contact Me</h2>
+    <section id="contact" className="min-h-[60vh] px-6 py-20 bg-slate-50 text-center">
+      <h2 className="text-4xl font-bold text-slate-800 mb-10">Contact Me</h2>
 
       <motion.div 
         initial={{ opacity: 0 }}
@@ -30,25 +30,25 @@ export default function Contact() {
             name="Name"
             placeholder="Your Name"
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition"
+            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition"
           />
           <input
             type="email"
             name="Email"
             placeholder="Your Email"
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition"
+            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition"
           />
           <textarea
             name="Message"
             placeholder="Your Message"
             required
             rows={4}
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-300 focus:outline-none transition resize-none"
+            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition resize-none"
           />
           <button
             type="submit"
-            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+            className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition"
           >
             Send Message
           </button>
@@ -56,7 +56,7 @@ export default function Contact() {
 
         {/* Email */}
         <div className="flex items-center justify-center gap-3 text-lg mt-6">
-          <FaEnvelope className="text-purple-600" />
+          <FaEnvelope className="text-indigo-600" />
           <a href="mailto:rimjhimsrivastava971@gmail.com" className="hover:underline">
             rimjhimsrivastava971@gmail.com
           </a>
@@ -64,7 +64,7 @@ export default function Contact() {
 
         {/* Phone */}
         <div className="flex items-center justify-center gap-3 text-lg">
-          <FaPhoneAlt className="text-purple-600" />
+          <FaPhoneAlt className="text-indigo-600" />
           <span>+91 8736826766</span>
         </div>
 
@@ -93,7 +93,7 @@ export default function Contact() {
           <a
             href="/Rimjhim_Cv.pdf"
             download
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition"
           >
             <FaDownload />
             Download CV
