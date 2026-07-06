@@ -18,7 +18,7 @@ export default function About() {
       >
         <h2 className="text-4xl font-bold text-purple-700 mb-4">About Me</h2>
         <p className="text-gray-700 text-lg leading-7 mb-4">
-          I am a <span className="font-semibold text-purple-600">Full-Stack Developer</span> specializing in building intelligent web applications, with proven experience across MERN, Spring Boot, FastAPI, and NLP-based recommendation systems.
+          I am an <span className="font-semibold text-purple-600">IT Graduate</span> specializing in building intelligent web applications, with proven experience across MERN, Spring Boot, FastAPI, and NLP-based recommendation systems.
         </p>
         <p className="text-gray-700 text-lg leading-7 mb-6">
           I have a proven track record of delivering production-ready, data-driven products—combining strong backend fundamentals, database design, frontend polish, and applied machine learning to solve real-world problems.
@@ -33,7 +33,7 @@ export default function About() {
                 <FaUniversity className="text-purple-600 text-xl mt-1 min-w-[20px]" />
                 <div>
                   <p className="text-base text-gray-800 font-medium">B.Tech in Information Technology (2022–2026)</p>
-                  <p className="text-sm text-gray-600">United College of Engineering and Research, Prayagraj • CGPA: 7.91</p>
+                  <p className="text-sm text-gray-600">United College of Engineering and Research, Prayagraj • CGPA: 8.03</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
