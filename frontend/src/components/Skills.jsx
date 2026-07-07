@@ -62,7 +62,7 @@ export default function Skills() {
     <section id="skills" className="min-h-screen px-6 py-24 bg-[#fafafa] flex flex-col items-center justify-center">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-16 text-center">
         <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">04.</span>
-        Technical Arsenal
+        Technical Skills
       </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

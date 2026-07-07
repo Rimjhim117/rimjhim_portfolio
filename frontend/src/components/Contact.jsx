@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 
 export default function Contact() {
+  const [status, setStatus] = useState("idle"); // idle, sending, success, error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    const formData = new FormData(e.target);
+    // Replace the value below with your actual Web3Forms Access Key
+    // You can get a free key instantly at https://web3forms.com/
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      const data = await response.json();
+      if (data.success) {
+        setStatus("success");
+        e.target.reset();
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 5000);
+      }
+    } catch (err) {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
+  };
+
   return (
     <section id="contact" className="min-h-[60vh] px-6 py-24 bg-white text-center">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-10 text-center">
@@ -14,11 +45,9 @@ export default function Contact() {
           I'm currently looking for new opportunities! Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
 
-        {/* Contact Form using mailto action */}
+        {/* Contact Form using Web3Forms action */}
         <form 
-          action="mailto:rimjhimsrivastava971@gmail.com" 
-          method="POST" 
-          encType="text/plain" 
+          onSubmit={handleSubmit}
           className="flex flex-col gap-4"
         >
           <input
@@ -44,9 +73,21 @@ export default function Contact() {
           />
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-8 py-3.5 rounded-full hover:bg-indigo-700 transition duration-300 font-bold text-xs uppercase tracking-wider shadow-sm shadow-indigo-100 hover:shadow"
+            disabled={status === "sending"}
+            className={`px-8 py-3.5 rounded-full transition duration-300 font-bold text-xs uppercase tracking-wider shadow-sm transition-all duration-200 ${
+              status === "sending"
+                ? "bg-indigo-400 text-slate-100 cursor-not-allowed"
+                : status === "success"
+                ? "bg-emerald-600 text-white shadow-emerald-100"
+                : status === "error"
+                ? "bg-rose-600 text-white shadow-rose-100"
+                : "bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-100 hover:shadow"
+            }`}
           >
-            Send Message
+            {status === "idle" && "Send Message"}
+            {status === "sending" && "Sending..."}
+            {status === "success" && "Message Sent!"}
+            {status === "error" && "Failed to Send"}
           </button>
         </form>
 
