@@ -49,8 +49,9 @@ export default function ExperienceAndResearch() {
   ];
 
   return (
-    <section id="experience" className="min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
+    <section id="experience" className="min-h-screen px-6 py-24 bg-[#fafafa] flex flex-col items-center justify-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-16 text-center">
+        <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">02.</span>
         Experience & Research
       </h2>
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -58,19 +59,19 @@ export default function ExperienceAndResearch() {
         {experiences.map((exp, index) => (
           <div 
             key={exp.title}
-            className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex flex-col h-full"
+            className="bg-white p-6 rounded-3xl border border-slate-200/80 hover:border-indigo-400 hover:shadow-lg shadow-sm transition-all duration-300 flex flex-col h-full"
           >
             <div className="flex items-center gap-3 mb-4">
               {exp.icon}
-              <h3 className="text-sm font-bold tracking-wider text-slate-400 uppercase">{exp.type}</h3>
+              <h3 className="text-xs font-bold tracking-widest text-slate-400 uppercase">{exp.type}</h3>
             </div>
-            <h4 className="text-lg font-bold text-slate-800 leading-tight mb-2">
+            <h4 className="text-base font-bold text-slate-800 leading-tight mb-2">
               {exp.title}
             </h4>
             <p className="text-sm font-semibold text-indigo-600 mb-4">
               {exp.issuer}
             </p>
-            <p className="text-slate-600 text-sm leading-relaxed flex-grow">
+            <p className="text-slate-500 text-sm leading-relaxed flex-grow">
               {exp.desc}
             </p>
             {exp.link && (
@@ -78,9 +79,9 @@ export default function ExperienceAndResearch() {
                 href={exp.link}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 mt-6 text-indigo-600 font-semibold hover:text-indigo-800 transition"
+                className="inline-flex items-center gap-1.5 mt-6 text-indigo-600 font-bold hover:text-indigo-800 transition text-xs uppercase tracking-wider"
               >
-                View Publication <FaExternalLinkAlt />
+                View Publication <FaExternalLinkAlt size={10} />
               </a>
             )}
           </div>

@@ -45,8 +45,9 @@ export default function Achievements() {
   ];
 
   return (
-    <section id="achievements" className="min-h-[50vh] px-6 py-20 bg-slate-50 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">
+    <section id="achievements" className="min-h-[50vh] px-6 py-24 bg-white flex flex-col items-center justify-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-16 text-center">
+        <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">03.</span>
         Achievements & Participations
       </h2>
 
@@ -54,13 +55,13 @@ export default function Achievements() {
         {achievements.map((ach, index) => (
           <div
             key={ach.title}
-            className="p-6 rounded-2xl shadow-sm bg-white border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex flex-col justify-center items-center text-center"
+            className="p-8 rounded-3xl shadow-sm bg-slate-50/50 hover:bg-slate-50 border border-slate-200/60 hover:border-indigo-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-center items-center text-center"
           >
-            <div className="mb-4 bg-slate-50 p-4 rounded-full">
+            <div className="mb-4 bg-white border border-slate-100 p-4 rounded-full shadow-sm">
               {ach.icon}
             </div>
-            <h3 className="text-lg font-bold text-slate-800 leading-tight mb-2">{ach.title}</h3>
-            <p className="text-sm font-medium text-slate-500">{ach.issuer}</p>
+            <h3 className="text-base font-bold text-slate-800 leading-tight mb-2">{ach.title}</h3>
+            <p className="text-sm font-semibold text-slate-500">{ach.issuer}</p>
           </div>
         ))}
       </div>

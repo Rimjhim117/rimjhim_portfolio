@@ -109,14 +109,17 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen px-6 py-20 bg-slate-50 text-center">
-      <h2 className="text-4xl font-bold text-slate-800 mb-12">Projects & Case Studies</h2>
+    <section id="projects" className="min-h-screen px-6 py-24 bg-white text-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-16 text-center">
+        <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">05.</span>
+        Projects & Case Studies
+      </h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 text-left flex flex-col justify-between"
+            className="bg-slate-50/50 hover:bg-slate-50 p-6 rounded-3xl border border-slate-200/80 hover:border-indigo-400 hover:shadow-lg shadow-sm transition-all duration-300 text-left flex flex-col justify-between"
           >
             <div>
               <div className="flex justify-between items-center mb-3">
@@ -131,7 +134,7 @@ export default function Projects() {
                       rel="noreferrer"
                       className="text-indigo-600 hover:text-indigo-800 transition-colors"
                     >
-                      <FaExternalLinkAlt size={18} />
+                      <FaExternalLinkAlt size={16} />
                     </a>
                   )}
                   {project.github && (
@@ -141,12 +144,12 @@ export default function Projects() {
                       rel="noreferrer"
                       className="text-indigo-600 hover:text-indigo-800 transition-colors"
                     >
-                      <FaGithub size={22} />
+                      <FaGithub size={20} />
                     </a>
                   )}
                 </div>
               </div>
-              <p className="text-slate-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+              <p className="text-slate-500 mb-4 text-sm leading-relaxed">{project.description}</p>
             </div>
             
             <div className="mt-4">
@@ -154,7 +157,7 @@ export default function Projects() {
                 {project.tech.map((techItem) => (
                   <span
                     key={techItem}
-                    className="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-medium"
+                    className="text-xs bg-white text-slate-600 border border-slate-200/60 px-2.5 py-0.5 rounded-full font-medium"
                   >
                     {techItem}
                   </span>
@@ -164,9 +167,9 @@ export default function Projects() {
               {project.caseStudy && (
                 <button
                   onClick={() => setActiveCaseStudy(project)}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 px-4 py-2.5 rounded-xl font-semibold text-sm transition-all duration-200 border border-indigo-100"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-sm shadow-indigo-100 hover:shadow"
                 >
-                  View Case Study <FaArrowRight size={12} />
+                  View Case Study <FaArrowRight size={10} />
                 </button>
               )}
             </div>
@@ -184,7 +187,7 @@ export default function Projects() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setActiveCaseStudy(null)}
-              className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+              className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
             />
 
             {/* Modal Body */}
@@ -193,7 +196,7 @@ export default function Projects() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", duration: 0.4 }}
-              className="bg-white rounded-3xl p-6 sm:p-8 max-w-2xl w-full relative z-10 shadow-2xl border border-slate-100 flex flex-col max-h-[85vh]"
+              className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 max-w-2xl w-full relative z-10 shadow-2xl border border-slate-100 flex flex-col max-h-[85vh]"
             >
               {/* Close Button */}
               <button

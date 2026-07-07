@@ -3,11 +3,14 @@ import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaDownload } from "react-
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[60vh] px-6 py-20 bg-slate-50 text-center">
-      <h2 className="text-4xl font-bold text-slate-800 mb-10">Contact Me</h2>
+    <section id="contact" className="min-h-[60vh] px-6 py-24 bg-white text-center">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-10 text-center">
+        <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">07.</span>
+        Contact Me
+      </h2>
 
       <div className="max-w-xl mx-auto space-y-6 text-gray-700">
-        <p className="text-lg">
+        <p className="text-slate-500 text-sm leading-relaxed mb-6">
           I'm currently looking for new opportunities! Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
 
@@ -23,41 +26,41 @@ export default function Contact() {
             name="Name"
             placeholder="Your Name"
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition"
+            className="px-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-indigo-100 focus:border-indigo-600 focus:outline-none transition text-sm text-slate-800 font-medium"
           />
           <input
             type="email"
             name="Email"
             placeholder="Your Email"
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition"
+            className="px-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-indigo-100 focus:border-indigo-600 focus:outline-none transition text-sm text-slate-800 font-medium"
           />
           <textarea
             name="Message"
             placeholder="Your Message"
             required
             rows={4}
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition resize-none"
+            className="px-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50/50 focus:bg-white focus:ring-2 focus:ring-indigo-100 focus:border-indigo-600 focus:outline-none transition text-sm text-slate-800 font-medium resize-none"
           />
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition"
+            className="bg-indigo-600 text-white px-8 py-3.5 rounded-full hover:bg-indigo-700 transition duration-300 font-bold text-xs uppercase tracking-wider shadow-sm shadow-indigo-100 hover:shadow"
           >
             Send Message
           </button>
         </form>
 
         {/* Email */}
-        <div className="flex items-center justify-center gap-3 text-lg mt-6">
-          <FaEnvelope className="text-indigo-600" />
-          <a href="mailto:rimjhimsrivastava971@gmail.com" className="hover:underline">
+        <div className="flex items-center justify-center gap-3 text-sm font-medium mt-6 text-slate-600">
+          <FaEnvelope className="text-indigo-600 text-base" />
+          <a href="mailto:rimjhimsrivastava971@gmail.com" className="hover:underline hover:text-indigo-600 transition">
             rimjhimsrivastava971@gmail.com
           </a>
         </div>
 
         {/* Phone */}
-        <div className="flex items-center justify-center gap-3 text-lg">
-          <FaPhoneAlt className="text-indigo-600" />
+        <div className="flex items-center justify-center gap-3 text-sm font-medium text-slate-600">
+          <FaPhoneAlt className="text-indigo-600 text-base" />
           <span>+91 8736826766</span>
         </div>
 
@@ -67,7 +70,7 @@ export default function Contact() {
             href="https://github.com/Rimjhim117"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-700 hover:text-black transition"
+            className="text-slate-400 hover:text-slate-800 transition"
           >
             <FaGithub />
           </a>
@@ -75,7 +78,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/rimjhim-srivastava-52769032b"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-600 hover:text-blue-800 transition"
+            className="text-slate-400 hover:text-slate-800 transition"
           >
             <FaLinkedin />
           </a>
@@ -86,7 +89,7 @@ export default function Contact() {
           <a
             href="/Rimjhim_Cv.pdf"
             download
-            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition"
+            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-3.5 rounded-full hover:bg-indigo-700 transition duration-300 font-bold text-xs uppercase tracking-wider shadow-sm shadow-indigo-100 hover:shadow"
           >
             <FaDownload />
             Download CV

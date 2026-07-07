@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+    <nav className="fixed w-full top-0 z-50 bg-white/70 backdrop-blur-md border-b border-slate-200/50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between md:justify-end items-center">
         
         {/* Mobile Menu Button */}
@@ -25,14 +25,14 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6 items-center text-gray-700 font-medium text-sm">
+        <div className="hidden md:flex space-x-6 items-center text-slate-600 font-semibold text-xs tracking-wider uppercase">
           {links.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-indigo-600 transition duration-300">
               {link.name}
             </a>
           ))}
           <a href="#contact">
-            <button className="ml-4 bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition duration-300">
+            <button className="ml-4 bg-indigo-600 text-white px-6 py-2.5 rounded-full shadow-sm hover:shadow hover:bg-indigo-700 transition duration-300 font-bold tracking-wider">
               Contact Me
             </button>
           </a>
@@ -41,20 +41,20 @@ export default function Navbar() {
 
       {/* Mobile Navigation Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white w-full flex flex-col py-2 shadow-lg border-t border-gray-100">
+        <div className="md:hidden bg-white/90 backdrop-blur-md w-full flex flex-col py-2 shadow-lg border-t border-slate-100">
           {links.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
               onClick={() => setIsOpen(false)}
-              className="px-6 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 transition"
+              className="px-6 py-3 text-slate-600 font-semibold tracking-wider uppercase text-xs hover:bg-indigo-50 hover:text-indigo-600 transition"
             >
               {link.name}
             </a>
           ))}
-          <div className="px-6 py-4 border-t border-gray-100">
+          <div className="px-6 py-4 border-t border-slate-100">
             <a href="#contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full bg-indigo-600 text-white px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition duration-300">
+              <button className="w-full bg-indigo-600 text-white px-6 py-3 rounded-full shadow-sm hover:bg-indigo-700 transition duration-300 font-bold tracking-wider text-xs uppercase">
                 Contact Me
               </button>
             </a>

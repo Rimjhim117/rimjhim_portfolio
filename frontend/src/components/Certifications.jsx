@@ -70,9 +70,10 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="min-h-[50vh] px-6 py-20 bg-gradient-to-b from-slate-50 to-white text-center"
+      className="min-h-[50vh] px-6 py-24 bg-[#fafafa] text-center"
     >
-      <h2 className="text-4xl font-bold text-slate-800 mb-16">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-16 text-center">
+        <span className="font-mono text-indigo-600 text-xl mr-3 font-semibold">06.</span>
         Certifications & Courses
       </h2>
 
@@ -80,14 +81,14 @@ export default function Certifications() {
         {certificates.map((cert, index) => (
           <div
             key={cert.title}
-            className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 hover:border-indigo-500 text-left flex flex-col justify-center items-center text-center"
+            className="bg-white p-6 rounded-3xl border border-slate-200/80 hover:border-indigo-400 hover:shadow-lg shadow-sm transition-all duration-300 text-left flex flex-col justify-center items-center text-center"
           >
-            <div className="mb-4">
+            <div className="mb-4 bg-slate-50 p-4 rounded-full border border-slate-100 shadow-sm">
               {cert.icon}
             </div>
-            <h3 className="text-md font-bold text-slate-800 leading-tight mb-1">{cert.title}</h3>
-            <p className="text-xs text-gray-500 font-medium">{cert.issuer}</p>
-            {cert.year && <p className="text-xs text-slate-400 font-semibold mt-1">{cert.year}</p>}
+            <h3 className="text-base font-bold text-slate-800 leading-tight mb-1">{cert.title}</h3>
+            <p className="text-xs text-slate-500 font-semibold">{cert.issuer}</p>
+            {cert.year && <p className="text-xs text-slate-400 font-bold mt-1.5">{cert.year}</p>}
           </div>
         ))}
       </div>
