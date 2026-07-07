@@ -12,7 +12,7 @@ export default function Intro() {
         className="flex-1 text-center md:text-left"
       >
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-6 border border-indigo-100/60">
-          Available for Opportunities
+          Designing AI-Driven Web Applications
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
           Hi, I'm <span className="text-indigo-600">Rimjhim Srivastava</span>
